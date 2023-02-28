@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  position: relative;
+}
 .dark {
   /* background: hsl(208, 95%, 34%); */
   background: hsl(206, 92%, 20%);
@@ -272,7 +275,11 @@
 }
 .inputDiv {
   width: 600px;
-  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 90px;
+  margin-left: 50px;
 }
 .inputDiv input {
   width: 90%;
@@ -282,7 +289,8 @@
   border: none;
   border-radius: 10px;
   font-size: 20px;
-  box-shadow: 0.1rem 0.1rem 0.3rem -0.03rem rgba(74, 58, 58, 0.9) !important;
+  /* box-shadow: 0.1rem 0.1rem 0.3rem -0.03rem rgba(74, 58, 58, 0.9) !important; */
+  box-shadow: 0 0 6pt 3pt #d3d3d3;
 }
 ::placeholder {
   font-size: 20px;
@@ -364,7 +372,7 @@
   .header {
     width: 100vw;
     justify-content: space-evenly;
-    height: 90px;
+    height: 70px;
     background-color: whitesmoke;
   }
   .mode {
@@ -385,18 +393,22 @@
     width: 100%;
   }
   .filterBox {
-    margin: 20px 150px;
+    margin: 0px 150px;
     height: 40px;
     font-size: 18px;
     width: 200px;
     padding: 10px 15px;
+    margin-top: 90px;
+    margin-bottom: 10px;
   }
   .filterBoxDark {
-    margin: 20px 150px;
+    margin: 0px 150px;
     height: 40px;
     font-size: 18px;
     width: 200px;
     padding: 10px 15px;
+    margin-top: 90px;
+    margin-bottom: 10px;
   }
   .header h1 {
     font-size: 14px;
@@ -405,14 +417,16 @@
   .headerDark {
     width: 100vw;
     justify-content: space-evenly;
-    height: 90px;
+    height: 70px;
   }
   .headerDark h1 {
     font-size: 14px;
     margin-right: 20px;
   }
   .inputDiv {
-    width: 460px;
+    width: 320px;
+    margin-left: 40px;
+    margin-top: 90px;
   }
   .inputDiv input {
     width: 100%;
