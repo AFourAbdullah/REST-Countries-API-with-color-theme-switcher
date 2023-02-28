@@ -290,8 +290,9 @@ body {
   border-radius: 10px;
   font-size: 20px;
   /* box-shadow: 0.1rem 0.1rem 0.3rem -0.03rem rgba(74, 58, 58, 0.9) !important; */
-  box-shadow: 0 0 6pt 3pt #d3d3d3;
+  box-shadow: 0 0 5pt 1pt #d3d3d3;
 }
+
 ::placeholder {
   font-size: 20px;
 }
